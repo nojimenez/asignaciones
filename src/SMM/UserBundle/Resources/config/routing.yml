@@ -1,0 +1,25 @@
+smm_user_homepage:
+    path:     /
+    defaults: { _controller: SMMUserBundle:Default:index }
+
+smm_user_index:
+    path: /user/index
+    defaults: {_controller: SMMUserBundle:User:index}
+
+smm_user_add:
+    path: /user/add
+    defaults: {_controller: SMMUserBundle:User:add}
+        
+smm_user_delete:
+    path: /user/delete/{id}
+    defaults: {_controller: SMMUserBundle:User:delete}
+
+smm_user_view:
+    path: /user/view/{id}
+    defaults: {_controller: SMMUserBundle:User:view}
+
+smm_user_update:
+    path: /user/update/{id}
+    defaults: {_controller: SMMUserBundle:User:update}
+
+        

@@ -1,0 +1,41 @@
+SMM\UserBundle\Entity\User:
+    type: entity
+    table: null
+    repositoryClass: SMM\UserBundle\Repository\UserRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        username:
+            type: string
+            length: '50'
+        firstName:
+            type: string
+            length: '50'
+            column: first_name
+        lastName:
+            type: string
+            length: '50'
+            column: last_name
+        email:
+            type: string
+            length: '100'
+        password:
+            type: string
+            length: 255
+        role:
+            type: string
+            length: 255
+        isActive:
+            type: boolean
+            column: is_active
+        createAt:
+            type: datetime
+            column: create_at
+        updateAt:
+            type: datetime
+            column: update_at
+    lifecycleCallbacks: {  }
